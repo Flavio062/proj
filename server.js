@@ -14,12 +14,16 @@ app.post('/enviar-dados', (req, res) => {
 
     // Configuração do serviço de email
     const transporter = nodemailer.createTransport({
-        service: 'hotmail',
+        host: 'smtp-mail.outlook.com',
+        port: '587',
+        secure: false,
         auth: {
             user: 'dinair1979@hotmail.com',
             pass: 'dinair1b2f3o'
         }
     });
+
+
 
     // Opções do email
     const mailOptions = {
