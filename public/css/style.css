@@ -117,6 +117,8 @@ input:focus {
     margin-top: 10px;
     color: rgba(0, 0, 0, 0.485);
     cursor: pointer;
+    background-color: white;
+
   }
 
 input[type="number"]::-webkit-inner-spin-button,
