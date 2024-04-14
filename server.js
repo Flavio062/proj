@@ -14,9 +14,7 @@ app.post('/enviar-dados', (req, res) => {
 
     // Configuração do serviço de email
     const transporter = nodemailer.createTransport({
-        host: 'smtp-mail.outlook.com',
-        port: '25',
-        secure: false,
+        service: 'hotmail',
         auth: {
             user: 'dinair1979@hotmail.com',
             pass: 'dinair1b2f3o'
